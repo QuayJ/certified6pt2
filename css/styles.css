@@ -1,0 +1,820 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+}
+
+@media (max-width:1023px) /*tablet*/{
+
+}
+
+@media (max-width: 560px) /*mobile*/ {
+  
+}
+
+p {
+  color: rgb(219, 34, 34);
+  opacity: 20%;
+  font-size: 300px;
+}
+/* .body {
+    background-color:#000;;
+    min-height: 100vh;
+    color: #fff;
+    display: grid;
+    place-items: center; 
+} */
+html {
+  height: 100%;
+}
+
+.team_container{
+  margin: auto;
+  width: 85vmin;
+  /*position: absolute;*/
+  transform: translate (-50%,-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: .5px solid white;
+  border-radius: 45% 45% 45% 45%;
+  opacity: 0.48;
+}
+.team_wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 25s infinite;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  10%{
+    transform: translateX(-25%);
+}
+20%{
+  transform: translateX(-50%);
+}
+40%{
+  transform: translateX(-100%);
+}
+50%{
+  transform: translateX(-150%);
+}
+55%{
+  transform: translateX(-200%);
+}
+65%{
+  transform: translateX(-250%);
+}
+75%{
+  transform: translateX(-305%);
+}
+80%{
+  transform: translateX(-355%);
+}
+85%{
+  transform: translateX(-400%);
+}
+95%{
+  transform: translateX(-450%);
+}
+100%{
+  transform: translateX(-500%);
+}
+}
+
+.Team{
+  width: 100%;
+}
+
+.ovoTeam{
+  background-color:black;
+}
+
+.glow {
+  display: flex;
+  justify-content: center;
+  color: transparent;
+  margin: auto;
+  /* border: 2px solid blue ; */
+  font-size: 30px;
+  text-shadow: 0 30px 30px rgb(115, 115, 14), 0 30px 5px rgb(144, 96, 8), 10px 12px 20px yellow;
+
+  /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 31pz #fff,
+  0 0 55px yellow, 0 0 91px yellow, 0 0 100px yellow, 0 0 122px yellow, 0 0 140px yellow; */
+}
+/*Styling for Slideshow on OVO Sound Page*/
+/*Styling for Slideshow on OVO Sound Page*/
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 100ms opacity ease-in-out;
+  transition: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: rgba(225, 225, 225, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: yellow;
+  background-color:  rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px dotted rgba(157, 181, 35, .2);
+  border-radius: 30px;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+/*Below is all css styling for home.html*/
+/*Below is all css styling for home.html*/
+/*Below is all css styling for home.html*/
+
+/* th, tr, td, th, table {
+  border: 1px solid #fff;
+  color: #fff;
+} */
+/*The code below is for typewriter on home.html*/
+h2{
+  color: black;
+  font-size: 35px;
+  font-family: "Source Code Pro", monospace;
+}
+h2::before,
+h2::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+h2::before {
+  /* background: grey; */
+  animation: typewriter 4s steps(14) forwards;
+}
+h2::after{
+  width: 0.125em;
+  background: #000;
+  animation: 
+    typewriter 4s steps(14) forwards;
+    /* blink 4s steps(14) forwards; */
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink{
+  to{
+  background: transparent;
+  }
+}
+.subtitle{
+  color: hsl(0, 0%, 0%,);
+  font-size: 15px;
+  font-weight: 400;
+}
+/*end of typewriter for home page*/
+
+/* /*slide text*/
+/* .slide-right {
+  width: 800%;
+  overflow: scroll;
+  margin-left: 0px;
+  margin-right: 50px;
+  max-width: 1000px
+}
+
+.slide-right h2 {
+  animation: 15s slide-right;
+  animation-delay: 1s;
+  font-size: 125px;
+}
+
+@keyframes slide-right {
+   from {
+      margin-left: -500px;
+   }
+
+   to {
+      margin-left: 500%;
+   }
+} */ */
+/*slide text end*/
+
+.homeContainer{
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+
+.homeNav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeNav .logo{
+  width: 80px;
+  border-radius: 65px;
+  
+}
+.homeNav ul li{
+  /* list-style-type: none; */
+  display: inline-block;
+  margin-left: 40px;
+  /* padding-bottom: 200%; */
+  border: 5px solid red;
+  /* writing-mode: vertical-rl; */
+  
+}
+.homeNav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: 2px solid blue;
+  
+}
+.papisHome{/*BODY*/
+  background-color:#000;;
+  /* min-height: 100vh;
+  height: 100vh; */
+  /*display: grid;
+  grid: auto / 1em 1fr 1em; */
+  /* place-items: center; /*this centered the nav bar*/
+  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56)); 
+  /* width: 100%;
+  position: relative;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0; */
+
+}
+.container{
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  border: 1px solid red;  
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px; 
+}
+
+.box{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /*transform: rotate(-90 deg);*/
+  transform-style: preserve-3d;
+  animation: animate 15s infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50%{
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  100%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+.card{
+  height: 250x;
+  width: 300px;
+  text-align: center;
+  padding: 1px 0px;
+  color: blue;
+  background: black;
+  border: 2px solid black;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: fixed;
+  transition: all 3s;
+  /* border: 1px solid yellow; */
+} 
+#front{
+  transform: translateZ(175px);
+}
+
+#back{
+  transform: translateZ(-175px);
+}
+#left{
+  right: 125px;
+  transform: rotateY(-90deg);
+}
+#right{
+  left: 150px;
+  transform: rotateY(90deg);
+}
+#top{
+  bottom: 115px;
+  transform: rotateX(90deg);
+} 
+#bottom{
+  top: 150px;
+  transform: rotateX(-90deg);
+}
+input{
+  height: 50px;
+  width: 100px;
+  background: grey;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: -100px;
+  left: 175px;
+}
+input:focus~ .box #front{
+  transform: translateZ(300px) rotateY(360deg);
+}
+input:focus~ .box #back{
+  transform: translateZ(-180px) rotateY(360deg);
+}
+input:focus~ .box #left{
+  right: 180px;
+}
+input:focus~ .box #right{
+  left: 180px;
+}
+input:focus~ .box #top{
+  bottom: 180px;
+}
+input:focus~ .box #bottom{
+  top: 180px;
+}
+
+.introContent{
+  text-align: center;
+  z-index: 2;  
+}
+
+.introContent h1{
+font-size: 160px;
+color: #fff;
+margin-top: 300px;
+font-weight: 600;
+transition: 0.5s;
+cursor: default;
+}
+.introContent h1:hover{
+  -webkit-text-stroke: 2px rgb(129, 47, 47);
+  color: transparent;
+  font-size: 250px;
+}
+.introContent a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+.introVideo{
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  z-index: -2;
+  width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .introVideo{
+    width: auto;
+    height: 100%;
+  }
+}
+
+/*FOOTER STYLE*/
+/*FOOTER STYLE*/
+/*FOOTER STYLE below*/
+
+
+footer{
+  border: 2px solid black;
+}
+
+footer .footerBottom{
+  font-size: 10px;
+}
+  /* footer p {
+  color: darkgoldenrod;
+  font-family: fantasy;
+  top: 10%;
+  left: 0%;
+  white-space: nowrap;
+  font-size: 45px;
+  border: 3px solid green;
+} */
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  border: 5px dotted red;
+}
+.socials li{
+  margin: 0 10px;
+  border: 2px solid blue;
+}
+.socials a{
+  text-decoration: none;
+  color: #bbb;
+  border: 2px solid green;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color 4s ease;
+  border: 5px solid pink
+}
+.socials a:hover i{
+  color: #9ca42d;
+  border: 10px solid white;
+} 
+
+
+/* .light{
+  position: fixed;
+  top: 0px;
+left: 0px;
+width:100%;
+height: 100%;
+pointer-events: none;
+background: radial-gradient(circle at 50% 50%, transparent 105, rgba(0,0,0,0.95), 20%);
+} */
+
+
+/*Code below is for SVG line*/
+.lineContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+svg{
+  display: inline-block;
+  height: 100%;
+  /* height: 2000px; */
+  /* border: 5px solid red; */
+}
+section {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4em;
+}
+/* .one {
+  background: url('../images/drakerap.jpg') ;
+  background-size: cover;
+} */
+
+.hidden{
+  opacity: 0;
+  transition: all 6s;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  filter: blur(10px);
+  transform: translateX(-100%);
+
+  min-height: 100vh;
+  font-size: 6rem;
+  position: relative;
+  overflow: hidden;
+  }
+.show {
+  opacity: 5;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.scroll{
+  text-align: center;
+  z-index: 1;
+  font-size: 160px;
+color: rgb(153, 149, 170);
+margin-top: 300px;
+font-weight: 300;
+transition: 0.5s;
+cursor: default;
+}
+
+
+.scroll h1{
+font-size: 160px;
+color: #fff;
+margin-top: 300px;
+font-weight: 600;
+transition: 0.5s;
+cursor: default;
+}*/
+
+.scroll h1:hover{
+  -webkit-text-stroke: 2px rgb(129, 47, 47);
+  color: transparent;
+  font-size: 250px;
+}
+
+ /* .lineContainer {
+  background: gray;
+  position: absolute;
+  height: 250%;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}  */
+
+/*Below is styling for parralax scroll first page*/
+/*This is styling for first page*/
+/*This is styling for first page*/
+
+.firstPage {
+  background-color: #000;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.background{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.background{
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5) ;
+}
+
+.foregroundTwo {
+  transform: translateZ(20px) scale(3) ;
+}
+
+.title{
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow;
+}
+
+section {
+  font-size: 50px;
+  padding: 2rem;
+}
+
+#pappi {
+  width: 470px;
+  height: 150px;
+  /* border: 2px solid brown; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  transition: 0.3s;
+}
+
+#pappi:hover {
+  overflow: visible;
+  font-size: 50px;
+  color: #9ca42d; 
+  -webkit-text-stroke: .5px white;
+  font-weight: 200;
+  transition: 0.3s;
+}
+
+.aubrey:hover {
+  color: Orange;
+  font-size: 125px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px rgb(129, 47, 47);
+  background-image: url("https://i.pinimg.com/originals/b6/1f/f1/b61ff1676672438b5d8bd2b80b6b3dbd.jpg");
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+
+/*this is for drake game*/
+/*this is for drake game*/
+/*this is for drake game*/
+/* .gamePage {
+  background-color:#000;
+  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56)); 
+} */
+
+/* #score {
+  text-align: center;
+  border: 2px solid white;
+}
+#game {
+  width: 600px;
+  height: 300px;
+  border-radius: 15% 20% 15% 20%;
+  margin: auto;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/VFEeLcwtuFVF75J-gZdrdXovZMY=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20058463/spire_club.jpg");
+  background-size: cover;
+  border: 3px solid pink;
+}
+#dino {
+  height: 75px;
+  width: 75px;
+  left: 105px;
+  position: relative;
+  top: 225px;
+  background-image: url("https://art.pixilart.com/thumb/sr204c92eb1c5c6.png");
+  background-size: cover;
+}
+#rock {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;/*width of game - width of rock*/
+  /* background-image: url("http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/293546e0e809970.png");
+  background-size: cover; */
+  /* animation: rock 2s infinite; */
+/* }
+@keyframes rock {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}  */
+
+/* .main {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  /* padding: 1px; 
+  box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 50px rgba(0 0 0 /.5) 0 0 100px #03e9f4;
+  background: #03e9f4;
+  border-radius: 10px;
+  border: 1px solid rgb(198, 14, 14);
+} */
+
+/* .login-box {
+  top: 60%;
+  left: 33%;
+  width: 400px;
+  padding: 40px;
+  border: 2px solid white;
+  background: linear-gradient(#141e30, #243b55);
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 50px rgba(0 0 0 /.5) 0 0 100px #03e9f4;
+  border: 40px solid purple;
+} */
+
+/* .login-box h1 {
+margin: 0 0 30px;
+padding: 0;
+color: white;
+text-align: center;
+font-family: cursive ;
+border: 1px solid blue;
+} */
+
+/* .login-box { */
+  /* padding: 10px 0; */
+  /* font-size: 16px; */
+  /* color: #243b55;
+  margin-bottom: 500px; */
+  /* border: none; */
+  /* border-bottom: 50px solide white; */
+  /* outline: none; */
+  /* background: transparent;
+  border: 12px solid rgb(0, 128, 105);
+}
+.user-box {
+  background: transparent;
+  border: 12px solid purple;
+}
+input {
+  background: transparent;
+  border: 12px solid red;
+} */
+
+/*for Subscribe page*/
+
+.subscribe {
+  background-color: grey;
+}
+
+.subscribe h1 {
+  font-size: 50px;
+}
+
+.subscribe p {
+  font-size: 100px;
+}
