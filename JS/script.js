@@ -34,3 +34,40 @@ buttons.addEventListener("click", () => {
 
     })
 })
+
+//Below is for chart
+
+const ctx = document.getElementById("myChart").getContext("2d");
+
+const labels = [
+    '2010',
+    '2011',
+    '2012',
+    '2013',
+    '2014',
+    '2015',
+    '2016',
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+];
+
+const data = {
+    labels,
+    datasets: [{
+        data: [1830000, 2338000, 1783000, 1739000, 407600],
+        label: "Album Sales",
+         },
+    ],
+};
+
+const config = {
+    type: "line",
+    data: data,
+    options: {
+        responsive: true,
+    },
+};
+
+const myChart = new myChart(ctx, config);
