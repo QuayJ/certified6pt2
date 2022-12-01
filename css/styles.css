@@ -184,6 +184,13 @@ html {
   background: #000;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+
 .homeNav{
   border: 5px solid white;
   width: 100%;
@@ -207,6 +214,7 @@ html {
   margin-left: 40px;
   /* padding-bottom: 200%; */
   border: 10px dotted red;
+  /* padding: 5rem; */
   /* writing-mode: vertical-rl; */ 
 }
 
@@ -793,7 +801,7 @@ font-size: small;
   border: 12px groove red;
 } 
 
-/*for Subscribe page*/
+/*for Subscribe.html page*/
 
 .subscribeForm {
   display: flex;
@@ -812,16 +820,92 @@ font-size: small;
   font-size: 100px;
 }
 
-/*Styling for carousel on Artist page*/
+/*Styling for carousel on testArtist.html page*/
 
 .artistBody {
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-  background-color: grey;
-  border: 12px solid blue;
+  /* width: 100vw; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("https://media.gq.com/photos/6361722e382732100d7beb22/master/pass/DVSN_1547.jpeg");
+  background-size: cover;
+  padding: 0rem 5rem;
+  /* border: 12px solid blue; */
 }
-.containerB {
+
+.big-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(133, 3, 3, 0.736);
+  -webkit-text-stroke: 2px;
+}
+
+.intro1 {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro2 {
+  /* background: black; */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  background: rgb(138, 3, 3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro1-text {
+  color: rgba(138, 3, 3, 4);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+}
+.intro2-text {
+  color: rgba(138, 3, 3, 4);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+
+}
+
+
+
+
+
+/* .containerB {
 
 width: 100%;
 height: 100%;
@@ -835,4 +919,4 @@ margin: auto;
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
+} */
