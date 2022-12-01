@@ -178,79 +178,6 @@ html {
 /*Below is all css styling for home.html*/
 /*Below is all css styling for home.html*/
 
-/* th, tr, td, th, table {
-  border: 1px solid #fff;
-  color: #fff;
-} */
-/*The code below is for typewriter on home.html*/
-h2{
-  color: black;
-  font-size: 35px;
-  font-family: "Source Code Pro", monospace;
-}
-h2::before,
-h2::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-h2::before {
-  /* background: grey; */
-  animation: typewriter 4s steps(14) forwards;
-}
-h2::after{
-  width: 0.125em;
-  background: #000;
-  animation: 
-    typewriter 4s steps(14) forwards;
-    /* blink 4s steps(14) forwards; */
-}
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-@keyframes blink{
-  to{
-  background: transparent;
-  }
-}
-.subtitle{
-  color: hsl(0, 0%, 0%,);
-  font-size: 15px;
-  font-weight: 400;
-}
-/*end of typewriter for home page*/
-
-/* /*slide text*/
-/* .slide-right {
-  width: 800%;
-  overflow: scroll;
-  margin-left: 0px;
-  margin-right: 50px;
-  max-width: 1000px
-}
-
-.slide-right h2 {
-  animation: 15s slide-right;
-  animation-delay: 1s;
-  font-size: 125px;
-}
-
-@keyframes slide-right {
-   from {
-      margin-left: -500px;
-   }
-
-   to {
-      margin-left: 500%;
-   }
-} */ */
-/*slide text end*/
-
 .homeContainer{
   width: 100%;
   min-height: 100vh;
@@ -258,6 +185,7 @@ h2::after{
 }
 
 .homeNav{
+  border: 5px solid white;
   width: 100%;
   position: absolute;
   top: 0;
@@ -267,56 +195,50 @@ h2::after{
   align-items: center;
   justify-content: space-between;
 }
+
 .homeNav .logo{
   width: 80px;
   border-radius: 65px;
-  
 }
+
 .homeNav ul li{
   /* list-style-type: none; */
   display: inline-block;
   margin-left: 40px;
   /* padding-bottom: 200%; */
-  border: 5px solid red;
-  /* writing-mode: vertical-rl; */
-  
+  border: 10px dotted red;
+  /* writing-mode: vertical-rl; */ 
 }
+
 .homeNav ul li a{
   text-decoration: none;
   color: white;
   font-size: 18px;
-  border: 2px solid blue;
-  
+  border: 2px solid blue; 
 }
-.papisHome{/*BODY*/
-  background-color:#000;;
-  /* min-height: 100vh;
-  height: 100vh; */
-  /*display: grid;
-  grid: auto / 1em 1fr 1em; */
-  /* place-items: center; /*this centered the nav bar*/
-  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56)); 
-  /* width: 100%;
-  position: relative;
-  padding: 0 5%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0; */
 
+.papisHome{/*BODY*/
+  background-color:#000;
+  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56)); 
 }
-.container{
+/* .container{
   height: 60vh;
   width: 30vw;
   position: absolute;
   top: 50vh;
-  border: 1px solid red;  
+  border: 10px solid red;  
   left: 50vw;
   transform: translate(-50%, -50%);
   perspective: 1000px; 
-}
+} */
 
+/*----below is for 3dbox on Subscribe page-------*/
 .box{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 450px;
+  border: 3px dotted plum;
   height: 250px;
   width: 250px;
   position: absolute;
@@ -369,7 +291,7 @@ h2::after{
   transform: rotateY(-90deg);
 }
 #right{
-  left: 150px;
+  left: 125px;
   transform: rotateY(90deg);
 }
 #top{
@@ -380,7 +302,7 @@ h2::after{
   top: 150px;
   transform: rotateX(-90deg);
 }
-input{
+/* input{
   height: 50px;
   width: 100px;
   background: grey;
@@ -390,7 +312,7 @@ input{
   position: absolute;
   top: -100px;
   left: 175px;
-}
+} */
 input:focus~ .box #front{
   transform: translateZ(300px) rotateY(360deg);
 }
@@ -410,7 +332,7 @@ input:focus~ .box #bottom{
   top: 180px;
 }
 
-/* Intro page styling */
+/*-------- Intro page.html styling ----------- */
 
 .light {
   display: flex;
@@ -510,8 +432,6 @@ footer{
   align-items: flex-end;
 }
 
-
-
 footer .footerLogo img {
   display: flex;
   border-radius: 50%;
@@ -531,11 +451,7 @@ footer .footerLogo img {
   border: 2px solid orange;
   margin-top: 30px;
 }
-
-/* footer .footerBottom{
-  font-size: 10px;
-} */
-
+/* 
 .socials{
   list-style: none;
   display: flex;
@@ -561,7 +477,7 @@ footer .footerLogo img {
 .socials a:hover i{
   color: #9ca42d;
   border: 10px solid white;
-} 
+}  */
 
 
 /* .light{
@@ -760,7 +676,7 @@ section {
 }
 
 #myChart {
-  border: 3px solid red;
+  border: 3px solid rgb(251, 0, 255);
 }
 
 
@@ -820,65 +736,72 @@ section {
   100%{top: 225px;}
 }  */
 
-/* .main {
-  position: absolute;
-  top: 60%;
-  left: 30%;
+/*------below is for subrscribe box-------*/
+.subscribeForm {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 30%;
+  left: 15%;
   transform: translate(-50%, -50%);
-  /* padding: 1px; 
-  box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 50px rgba(0 0 0 /.5) 0 0 100px #03e9f4;
-  background: #03e9f4;
-  border-radius: 10px;
-  border: 1px solid rgb(198, 14, 14);
-} */
+  padding: 1px; 
+  /* box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 50px rgba(0 0 0 /.5) 0 0 100px #03e9f4; */
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 100px green;
+}
 
-/* .login-box {
+.loginBox {
   top: 60%;
-  left: 33%;
-  width: 400px;
+  left: 100%;
+  width: 100px;
   padding: 40px;
-  border: 2px solid white;
-  background: linear-gradient(#141e30, #243b55);
-  position: absolute;
+  /* border: 2px solid white; */
+  /* background: linear-gradient(#141e30, #243b55); */
+  position: fixed;
   box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: 30%;
   box-shadow: 0 0 5px rgba(0 0 0 /.5), 0 0 25px rgba(0 0 0 /.5), 0 0 50px rgba(0 0 0 /.5) 0 0 100px #03e9f4;
-  border: 40px solid purple;
-} */
+}
 
-/* .login-box h1 {
-margin: 0 0 30px;
+.loginBox h2 {
+margin: 0 0 5px 5px;
 padding: 0;
 color: white;
 text-align: center;
 font-family: cursive ;
 border: 1px solid blue;
-} */
-
-/* .login-box { */
-  /* padding: 10px 0; */
-  /* font-size: 16px; */
-  /* color: #243b55;
-  margin-bottom: 500px; */
-  /* border: none; */
-  /* border-bottom: 50px solide white; */
-  /* outline: none; */
-  /* background: transparent;
-  border: 12px solid rgb(0, 128, 105);
+font-size: small;
 }
-.user-box {
+
+.loginBox {
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #243b55;
+  margin-bottom: 50px; 
+  border: none;
+  border-bottom: 50px solide white;
+  outline: none;
+   background: transparent;
+  border: 5px groove rgb(0, 128, 105);
+}
+.userBox {
   background: transparent;
   border: 12px solid purple;
 }
-input {
+.inputSub {
   background: transparent;
-  border: 12px solid red;
-} */
+  border: 12px groove red;
+} 
 
 /*for Subscribe page*/
 
-.subscribe {
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  border: 2px solid black;
   background-color: grey;
+
 }
 
 .subscribe h1 {
@@ -887,4 +810,29 @@ input {
 
 .subscribe p {
   font-size: 100px;
+}
+
+/*Styling for carousel on Artist page*/
+
+.artistBody {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: grey;
+  border: 12px solid blue;
+}
+.containerB {
+
+width: 100%;
+height: 100%;
+margin: auto;
+
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
