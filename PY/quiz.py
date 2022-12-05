@@ -1,8 +1,8 @@
 print("How well do you know Drake?")
 
-playing = input("Lets play! ")
+playing = input("Lets play! Y/N? ")
 
-if playing != "yes" "ok":
+if playing != "Y":
     quit()
 
 print("Okay! Lets go!")
@@ -12,9 +12,10 @@ if answer == "first album":
     print('Correct!')
 else:
     print("Thats not right!")
+    quit()
 
-answer = input(" ")
-if answer == "":
+answer = input("whats drakes middle name ")
+if answer == "Aubrey":
     print('Correct!')
 else:
     print("Thats not right!")
