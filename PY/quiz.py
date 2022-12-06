@@ -1,39 +1,47 @@
-print("How well do you know Drake?")
+def main():
+    drakeAlbum = ["Care Package", "Scary Hours", "Scorpion", "Take Care", "More Life", "Nothing Was The Same", "Dark Lane Demo Tapes", "Thank Me Later"]
+    print(drakeAlbum)
 
-playing = input("Lets play! Y/N? ")
+    print(drakeAlbum[3])
 
-if playing != "Y":
-    quit()
+main()
 
-print("Okay! Lets go!")
+# print("How well do you know Drake?")
 
-answer = input("What was Drakes first studio album? ")
-if answer == "first album":
-    print('Correct!')
-else:
-    print("Thats not right!")
-    quit()
+# playing = input("Lets play! Y/N? ")
 
-answer = input("whats drakes middle name ")
-if answer == "Aubrey":
-    print('Correct!')
-else:
-    print("Thats not right!")
+# if playing != "Y":
+#     quit()
 
-answer = input(" ? ")
-if answer == " ":
-    print('Correct!')
-else:
-    print("Thats not right!")
+# print("Okay! Lets go!")
 
-answer = input(" ? ")
-if answer == " ":
-    print('Correct!')
-else:
-    print("Thats not right!")
+# answer = input("What was Drakes first studio album? ")
+# if answer == "first album":
+#     print('Correct!')
+# else:
+#     print("Thats not right!")
+#     quit()
 
-answer = input(" ? ")
-if answer == " ":
-    print('Correct!')
-else:
-    print("Thats not right!")
+# answer = input("whats drakes middle name ")
+# if answer == "Aubrey":
+#     print('Correct!')
+# else:
+#     print("Thats not right!")
+
+# answer = input(" ? ")
+# if answer == " ":
+#     print('Correct!')
+# else:
+#     print("Thats not right!")
+
+# answer = input(" ? ")
+# if answer == " ":
+#     print('Correct!')
+# else:
+#     print("Thats not right!")
+
+# answer = input(" ? ")
+# if answer == " ":
+#     print('Correct!')
+# else:
+#     print("Thats not right!")

@@ -192,7 +192,7 @@ nav {
 }
 
 .homeNav{
-  border: 5px solid white;
+  /* border: 5px solid white; */
   width: 100%;
   position: absolute;
   top: 0;
@@ -349,12 +349,12 @@ input:focus~ .box #bottom{
   padding-top: 50px;
   display: flex;
   align-items: center;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 .light video {
   margin: auto;
- border: 5px solid red;
+ /* border: 5px solid red; */
  object-fit: cover;
  width: 100%;
  height: 125%;
@@ -364,7 +364,7 @@ input:focus~ .box #bottom{
   text-align: center;
   z-index: 2;  
   position: absolute;
-  border: 8px solid wheat;
+  /* border: 8px solid wheat; */
   margin-top: 200px;
 }
 
@@ -388,13 +388,13 @@ margin-right: 200px; */
 font-weight: 600;
 transition: 1s;
 cursor: default;
-border: 4px solid purple;
+/* border: 4px solid purple; */
 -webkit-text-stroke: 2px rgba(0, 0, 0, 0.826);
 }
 
 .introContent a{
   position: relative;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   background-color: rgba(225, 225, 225, 0.334);
   text-decoration: none;
   display: inline-block;
@@ -433,7 +433,7 @@ border: 4px solid purple;
 
 
 footer{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   margin-top: 270px;
   display: flex;
   justify-content: center;
@@ -450,13 +450,17 @@ footer .footerLogo img {
   color: white;
 }
 #footerP {
+  /* border: 2px solid wheat; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
   font-size: 25px;
   color: #000;
 }
 .footer-bottom {
   display: flex;
   justify-content: center;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   margin-top: 30px;
 }
 /* 
@@ -828,10 +832,14 @@ font-size: small;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("https://media.gq.com/photos/6361722e382732100d7beb22/master/pass/DVSN_1547.jpeg");
-  background-size: cover;
+  /* background-image: url("https://media.gq.com/photos/6361722e382732100d7beb22/master/pass/DVSN_1547.jpeg"); */
+  background-image: url("https://acclaimmag.com/wp-content/uploads/2016/07/ovo-sound.jpg");
+  background-size:cover;
+  background-repeat: repeat-y;
+  /* background: rgba(37, 36, 36, 0.866); */
   padding: 0rem 5rem;
   /* border: 12px solid blue; */
+  
 }
 
 .big-text {
@@ -900,6 +908,48 @@ font-size: small;
   display: inline-block;
 
 }
+/*Styling continued for testartist.html*/
+/*Styling continued for testartist.html*/
+/*Styling continued for testartist.html*/
+
+#partyND {
+  border: 5px solid red;
+  width: 600px;
+  height: 400;
+  margin-top: 900px;
+}
+
+#dvsn {
+  width: 700px;
+  height: 500px;
+  margin-top: 850px;
+  margin-right: 300px;
+  border: 2px solid white;
+}
+
+#smiley {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 300px;
+  border-radius: 30%;
+  margin-left: 650px;
+  margin-bottom: 50px;
+}
+
+#majid {
+  margin-bottom: 300px;
+  width: 500px;
+  border: 2px solid red;
+}
+
+#royW {
+  border-radius: 40px;
+  border: 2px solid yellow;
+  width: 300px;
+  margin-bottom: 300px;
+}
+
 
 
 
