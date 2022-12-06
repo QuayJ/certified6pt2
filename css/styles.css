@@ -916,13 +916,13 @@ font-size: small;
   border: 5px solid red;
   width: 600px;
   height: 400;
-  margin-top: 900px;
+  margin-top: 1050px;
 }
 
 #dvsn {
-  width: 700px;
-  height: 500px;
-  margin-top: 850px;
+  width: 600px;
+  height: 400px;
+  margin-top: 750px;
   margin-right: 300px;
   border: 2px solid white;
 }
@@ -935,10 +935,13 @@ font-size: small;
   border-radius: 30%;
   margin-left: 650px;
   margin-bottom: 50px;
+  border: 3px solid yellow;
+  z-index: -1;
 }
 
 #majid {
-  margin-bottom: 300px;
+  margin-bottom: 400px;
+  margin-left: 250px;
   width: 500px;
   border: 2px solid red;
 }
@@ -947,8 +950,27 @@ font-size: small;
   border-radius: 40px;
   border: 2px solid yellow;
   width: 300px;
-  margin-bottom: 300px;
+  height: 350px;
+  margin-bottom: 800px;
+  margin-right: 270px;
 }
+
+#baka {
+  margin-bottom: 1350px;
+  margin-left: 280px;
+  border: 2px solid red;
+  width: 400px;
+  height: 400px;
+}
+
+#popcaan {
+  margin-bottom: 1800px;
+  border-radius: 30px;
+  border: 2px solid white;
+  width: 300px;
+  height: 300px;
+}
+
 
 
 
