@@ -12,11 +12,11 @@
   
 }
 
-p {
+/* p {
   color: rgb(219, 34, 34);
   opacity: 20%;
   font-size: 300px;
-}
+} */
 /* .body {
     background-color:#000;;
     min-height: 100vh;
@@ -185,6 +185,7 @@ html {
 }
 
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -194,7 +195,7 @@ nav {
 .homeNav{
   /* border: 5px solid white; */
   width: 100%;
-  position: absolute;
+  /* position: fixed; */
   top: 0;
   left: 0;
   padding: 20px 8%;
@@ -213,7 +214,7 @@ nav {
   display: inline-block;
   margin-left: 40px;
   /* padding-bottom: 200%; */
-  border: 10px dotted red;
+  /* border: 10px dotted red; */
   /* padding: 5rem; */
   /* writing-mode: vertical-rl; */ 
 }
@@ -222,7 +223,7 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  border: 2px solid blue; 
+  /* border: 2px solid blue;  */
 }
 
 .papisHome{/*BODY*/
@@ -781,7 +782,7 @@ padding: 0;
 color: white;
 text-align: center;
 font-family: cursive ;
-border: 1px solid blue;
+/* border: 1px solid blue; */
 font-size: small;
 }
 
@@ -794,15 +795,15 @@ font-size: small;
   border-bottom: 50px solide white;
   outline: none;
    background: transparent;
-  border: 5px groove rgb(0, 128, 105);
+  /* border: 5px groove rgb(0, 128, 105); */
 }
 .userBox {
   background: transparent;
-  border: 12px solid purple;
+  /* border: 12px solid purple; */
 }
 .inputSub {
   background: transparent;
-  border: 12px groove red;
+  /* border: 12px groove red; */
 } 
 
 /*for Subscribe.html page*/
@@ -912,18 +913,45 @@ font-size: small;
 /*Styling continued for testartist.html*/
 /*Styling continued for testartist.html*/
 
+.section2:hover {
+  transform: translateY(15px);
+}
+.section2:hover:before {
+  opacity: 1;
+}
+.section2:hover .content{
+  opacity: 1;
+  transform: translateY(0);
+}
+.section2:before{
+  /* content: ''; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  background: linear-gradient(to top, #000,);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.section2 img {
+  
+}
+
 #partyND {
   border: 5px solid red;
   width: 600px;
   height: 400;
-  margin-top: 1050px;
+  margin-top: 1200px;
 }
 
 #dvsn {
   width: 600px;
   height: 400px;
-  margin-top: 750px;
-  margin-right: 300px;
+  margin-top: 1300px;
+  margin-right: 225px;
   border: 2px solid white;
 }
 
